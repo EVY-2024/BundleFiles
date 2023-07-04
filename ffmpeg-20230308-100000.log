@@ -1,0 +1,34 @@
+ffmpeg started on 2023-03-08 at 10:00:00
+Report written to "ffmpeg-20230308-100000.log"
+Log level: 48
+Command line:
+"C:\\ffmpeg\\bin\\ffmpeg.exe" -list_devices true -f dshow -i dummy -report
+ffmpeg version 2023-02-27-git-891ed24f77-essentials_build-www.gyan.dev Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 12.2.0 (Rev10, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-zlib --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-sdl2 --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxvid --enable-libaom --enable-libopenjpeg --enable-libvpx --enable-mediafoundation --enable-libass --enable-libfreetype --enable-libfribidi --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-ffnvcodec --enable-nvdec --enable-nvenc --enable-d3d11va --enable-dxva2 --enable-libvpl --enable-libgme --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libtheora --enable-libvo-amrwbenc --enable-libgsm --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-librubberband
+  libavutil      58.  3.100 / 58.  3.100
+  libavcodec     60.  5.100 / 60.  5.100
+  libavformat    60.  4.100 / 60.  4.100
+  libavdevice    60.  2.100 / 60.  2.100
+  libavfilter     9.  4.100 /  9.  4.100
+  libswscale      7.  2.100 /  7.  2.100
+  libswresample   4. 11.100 /  4. 11.100
+  libpostproc    57.  2.100 / 57.  2.100
+Splitting the commandline.
+Reading option '-list_devices' ... matched as AVOption 'list_devices' with argument 'true'.
+Reading option '-f' ... matched as option 'f' (force format) with argument 'dshow'.
+Reading option '-i' ... matched as input url with argument 'dummy'.
+Reading option '-report' ... matched as option 'report' (generate a report) with argument '1'.
+Finished splitting the commandline.
+Parsing a group of options: global .
+Applying option report (generate a report) with argument 1.
+Successfully parsed a group of options.
+Parsing a group of options: input url dummy.
+Applying option f (force format) with argument dshow.
+Successfully parsed a group of options.
+Opening an input file: dummy.
+[dshow @ 0000018603fcd400] "ov9734_azurewave_camera" (video)
+[dshow @ 0000018603fcd400]   Alternative name "@device_pnp_\\?\usb#vid_13d3&pid_56f9&mi_00#8&15919f89&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global"
+[dshow @ 0000018603fcd400] "Microphone (High Definition Audio Device)" (audio)
+[dshow @ 0000018603fcd400]   Alternative name "@device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\wave_{9BBA3D74-4AEC-408B-B8BF-4D097B0DA88E}"
+dummy: Immediate exit requested
