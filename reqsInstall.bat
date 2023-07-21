@@ -3,6 +3,10 @@
 REM Chemin complet vers le fichier userDatabase
 set "fichier=C:\Program Files (x86)\EVY\.usersDatabase.evy"
 
+REM Chemin complet vers le fichier calibration
+set "fichier_cal=C:\Program Files (x86)\EVY\calibration.csv"
+
+
 REM Definition des variables ( REPO GIT + DESTINATION )
 set "url=https://github.com/EVY-2024/BundleFiles/archive/main.zip"
 set "destination=C:\Program Files (x86)\EVY"
@@ -29,8 +33,10 @@ set "droits=(A;OICI;FA;;;BA)(A;OICI;FA;;;SY)(A;OICI;FA;;;CO)(A;OICI;FA;;;WD)"
 
 REM Modification des droits
 icacls "%fichier%" /inheritance:r /grant:r "Everyone:(F)"
+icacls "%fichier_cal%" /inheritance:r /grant:r "Everyone:(F)"
 
 echo Les droits du fichier userDatabase.evy modifies.
+echo Les droits du fichier calibration.csv modifies.
 
 echo Le script a termine son execution.
 
